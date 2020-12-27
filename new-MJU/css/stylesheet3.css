@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+  min-height: 130vh;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/***************************************************** header  *****************************************************/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #f1f1f1;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+.banner {
+  position: relative;
+  max-width: 100%;
+  height: 120vh;
+  /* background: url(https://cdn.pixabay.com/photo/2015/09/09/20/54/book-933280_960_720.jpg); */
+  background: url(https://mapio.net/images-p/43433223.jpg);
+  background-size: cover;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+  color: #000;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+/************************************************ header hover ************************************************/
+header ul li a:hover {
+  border-bottom: 2px solid rgb(225, 247, 31);
+  padding-bottom: 0;
+}
+
+/***************************************************** content  *****************************************************/
+/* content1 */
+.info1 {
+  max-width: 100%;
+  height: 400px;
+}
+
+.info1-area {
+  color: #333;
+}
+
+.info1-area .fa {
+  font-size: 20rem;
+}
+
+.info1-area i {
+  margin-top: 48px;
+  float: left;
+}
+
+.info1-text {
+  text-align: center;
+  width: 460px;
+  float: left;
+  margin-left: 70px;
+  margin-top: 190px;
+}
+
+.info1-area h1 {
+  margin: 0;
+}
+
+.info1-area i:hover {
+  margin-top: 48px;
+  float: left;
+  color: green;
+  cursor: pointer;
+}
+
+/* content2 */
+.info2 {
+  max-width: 100%;
+  height: 400px;
+  background: #999;
+}
+
+.info2-area {
+  color: #333;
+}
+
+.info2-area .fa {
+  font-size: 20rem;
+}
+
+.info2-area i {
+  margin-top: 45px;
+  float: right;
+}
+
+.info2-text {
+  text-align: center;
+  width: 460px;
+  float: left;
+  margin-left: 70px;
+  margin-top: 170px;
+}
+
+.info2-area h1 {
+  margin: 0;
+}
+
+.info2-area i:hover {
+  margin-top: 48px;
+  float: right;
+  color: green;
+  cursor: pointer;
+}
+
+/* content3 */
+.info3 {
+  max-width: 100%;
+  height: 400px;
+}
+
+.info3-area {
+  color: #333;
+}
+
+.info3-area .fa {
+  font-size: 20rem;
+}
+
+.info3-area i {
+  margin-top: 55px;
+  float: left;
+}
+
+.info3-text {
+  text-align: center;
+  width: 460px;
+  float: left;
+  margin-left: 120px;
+  margin-top: 135px;
+}
+
+.info3-area h1 {
+  margin: 0;
+}
+
+.info3-area i:hover {
+  margin-top: 48px;
+  float: left;
+  color: green;
+  cursor: pointer;
+}
+
+/* content4 */
+.info4 {
+  max-width: 100%;
+  height: 400px;
+  background: #999;
+}
+
+.info4-area {
+  color: #333;
+}
+
+.info4-area .fa {
+  font-size: 20rem;
+}
+
+.info4-area i {
+  margin-top: 45px;
+  float: right;
+}
+
+.info4-text {
+  text-align: center;
+  width: 460px;
+  float: left;
+  margin-left: 70px;
+  margin-top: 135px;
+}
+
+/************************************************ .content-info-item hover ************************************************/
+.info4-area i:hover {
+  margin-top: 48px;
+  float: right;
+  color: green;
+  cursor: pointer;
+}
+
+/***************************************************** footer  *****************************************************/
+footer {
+  /* margin-top: 80px; */
+  box-shadow: 0 0 10px #666;
+  height: 200px;
+  width: 100%;
+  background: #f5f5f5;
+}
+
+footer h1 {
+  padding-top: 12px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  padding-top: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  height: auto;
+}
+
+footer .footer-icon-grid {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+footer .footer-icon-item {
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+footer .footer-icon-item .fa {
+  margin-top: 20px;
+  font-size: 40px;
+  color: #333;
+}
